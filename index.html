@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивная Шапка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Моя компания</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Переключение навигации">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#service">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1>Добро пожаловать на наш сайт</h1>
+        <p>Фотографии с текущего объекта.</p>
+
+        <!-- Карусель для просмотра фотографий -->
+        <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+            <ol class="carousel-indicators" style="list-style-type: none;">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="chinese-dragon-1-64060-1024x576-MM-80.webp" style="border-radius: 7px;" class="d-block w-100" alt="Фотография 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="porsche-911-1-64045-1024x576-MM-80.webp" style="border-radius: 7px;" class="d-block w-100" alt="Фотография 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="view-from-the-window-1-64031-1024x576-MM-80.webp " style="border-radius: 7px;"  class="d-block w-100" alt="Фотография 3">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+
+        <h1 id="service">Услуги</h1>
+        <!-- Карточки с аккордеоном -->
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="construction-workers-truck-crane-barrel-sky-background-construction-workers-truck-crane-barrel-sky-background-vector-110051255.webp" class="card-img-top" alt="Изображение 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Хочешь устроиться на работу?</h5>
+                        <p class="card-text">Дерзай, мы тебе поможем!</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#card1Content" aria-expanded="false" aria-controls="card1Content">Подробнее</button>
+                        <div class="collapse mt-3" id="card1Content">
+                            <p>Как устроиться...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="architect-holding-blueprint-construction-background-showing-like-sign-hand-man-project-helmet-suit-cartoon-170861551.webp" class="card-img-top" alt="Изображение 2">
+                    <div class="card-body">
+                        <h5 class="card-title">А что мы?</h5>
+                        <p class="card-text">Мы - ведущая компания в этой сфере</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#card2Content" aria-expanded="false" aria-controls="card2Content">Подробнее</button>
+                        <div class="collapse mt-3" id="card2Content">
+                            <p>что-то о компании</p>
+                        </div>
+                    </div>
+                </div>
+            </div><div class="col-md-4">
+                <div class="card">
+                    <img src="enginner-builder-standing-under-construction-scenery-background-enginner-builder-standing-under-construction-scenery-167505382.webp" class="card-img-top" alt="Изображение 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Экология</h5>
+                        <p class="card-text">Мы используем перерабатывающийся материал</p>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#card3Content" aria-expanded="false" aria-controls="card3Content">Подробнее</button>
+                        <div class="collapse mt-3" id="card3Content">
+                            <p>Чо именно</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Форма для заполнения -->
+        <div class="form-container " style="background-color: #b0b2b4;">
+            <div class="form-header">
+                Свяжитесь с нами
+            </div>
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="Ваше имя">
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Ваш email">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" id="message" rows="4" placeholder="Ваше сообщение"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </main>
+
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- О сайте -->
+                <div class="col-md-4">
+                    <h5>О сайте</h5>
+                    <p>Наш сайт предоставляет качественные услуги и информацию для всех наших клиентов. Мы стремимся к совершенству и всегда рады новым посетителям.</p>
+                </div>
+                <!-- Социальные сети -->
+                <div class="col-md-4">
+                    <h5>Мы в соцсетях</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                    </ul>
+                </div>
+                <!-- Поддержка -->
+                <div class="col-md-4">
+                    <h5>Контакты</h5>
+                    <p>Свяжитесь с нами по email: <a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
